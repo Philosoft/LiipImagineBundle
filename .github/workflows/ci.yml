@@ -12,6 +12,13 @@ jobs:
           - '7.2'
           - '7.3'
           - '7.4'
+        composer-dependencies:
+          - highest
+        include:
+          - php: '7.1'
+            composer-dependencies: lowest
+          - php: '7.4'
+            composer-dependencies: lowest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -27,7 +34,7 @@ jobs:
       - name: Update project dependencies
         uses: ramsey/composer-install@v1
         with:
-          dependency-versions: highest
+          dependency-versions: ${{ matrix.composer-dependencies }}
 
       - name: Cache PHPUnit
         uses: actions/cache@v2
