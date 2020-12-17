@@ -19,6 +19,18 @@ jobs:
             composer-dependencies: lowest
           - php: '7.4'
             composer-dependencies: lowest
+          - php: '7.1'
+            symfony-require: '3.4.*'
+            composer-dependencies: highest
+          - php: '7.1'
+            symfony-require: '4.4.*'
+            composer-dependencies: highest
+          - php: '7.2'
+            symfony-require: '5.1.*'
+            composer-dependencies: highest
+          - php: '7.2'
+            symfony-require: '5.2.*'
+            composer-dependencies: highest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -30,6 +42,12 @@ jobs:
           coverage: none
           extensions: gd, imagick
           ini-values: disable_functions=imagewebp
+
+      - name: Require Symfony version
+        if: matrix.symfony-require
+        run: |
+          composer global require --no-interaction --no-progress symfony/flex:^1.11
+          composer config extra.symfony.require ${{ matrix.symfony-require }}
 
       - name: Update project dependencies
         uses: ramsey/composer-install@v1
