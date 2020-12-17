@@ -1,8 +1,8 @@
 # LiipImagineBundle
 
-|       Travis-CI        |        Style-CI         |         Coverage        |        Downloads        |         Release         |
+|    GitHub Actions      |        Style-CI         |         Coverage        |        Downloads        |         Release         |
 |:----------------------:|:-----------------------:|:-----------------------:|:-----------------------:|:-----------------------:|
-| [![Build Status](https://travis-ci.com/liip/LiipImagineBundle.svg?branch=master)](https://travis-ci.com/liip/LiipImagineBundle) | [![Style CI](https://src.run/shield/liip/LiipImagineBundle/2.0/styleci.svg)](https://src.run/service/liip/LiipImagineBundle/2.0/styleci) | [![Coverage](https://src.run/shield/liip/LiipImagineBundle/2.0/coveralls.svg)](https://src.run/service/liip/LiipImagineBundle/2.0/coveralls) | [![Downloads](https://src.run/shield/liip/LiipImagineBundle/packagist_dt.svg)](https://src.run/service/liip/LiipImagineBundle/packagist) | [![Latest Stable Version](https://src.run/shield/liip/LiipImagineBundle/packagist_v.svg)](https://src.run/service/liip/LiipImagineBundle/packagist) | 
+| [![Build Status](https://github.com/liip/LiipImagineBundle/workflows/.github/workflows/ci.yml/badge.svg?branch=master)](https://github.com/liip/LiipImagineBundle/actions?query=branch%3Amaster) | [![Style CI](https://src.run/shield/liip/LiipImagineBundle/2.0/styleci.svg)](https://src.run/service/liip/LiipImagineBundle/2.0/styleci) | [![Coverage](https://src.run/shield/liip/LiipImagineBundle/2.0/coveralls.svg)](https://src.run/service/liip/LiipImagineBundle/2.0/coveralls) | [![Downloads](https://src.run/shield/liip/LiipImagineBundle/packagist_dt.svg)](https://src.run/service/liip/LiipImagineBundle/packagist) | [![Latest Stable Version](https://src.run/shield/liip/LiipImagineBundle/packagist_v.svg)](https://src.run/service/liip/LiipImagineBundle/packagist) |
 
 *This bundle provides an image manipulation abstraction toolkit for
 [Symfony](http://symfony.com/)-based projects.*

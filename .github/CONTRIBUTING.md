@@ -18,7 +18,7 @@ context for whomever ultimately implementations your request.
 
 *If you __submit__ a new feature*, ensure you provide a verbose description of your
 contribution, again making sure to completely fill out the new pull request template. Your
-pull request must pass our [Travis automated build check][travis], which runs our unit test
+pull request must pass our [GitHub Actions automated build check][gh-actions], which runs our unit test
 suite against various PHP versions and checks that proper code style standards are met.
 
 ## Report Bug
@@ -156,6 +156,7 @@ into the upstream repository is the same.
 
 [cs-conf]:       ../.php_cs.dist
 [cs]:            http://cs.sensiolabs.org/
+[gh-actions]     https://github.com/liip/LiipImagineBundle/actions
 [gh-help]:       https://help.github.com
 [gh-help-pr]:    https://help.github.com/send-pull-requests
 [gh]:            https://github.com
@@ -163,7 +164,6 @@ into the upstream repository is the same.
 [pr-make]:       https://github.com/liip/LiipImagineBundle/pull/new
 [issue-list]:    https://github.com/liip/LiipImagineBundle/issues
 [issue-make]:    https://github.com/liip/LiipImagineBundle/issues/new
-[travis]:        https://travis-ci.org/liip/LiipImagineBundle
 [rst-info]:      http://symfony.com/doc/current/contributing/documentation/format.html#restructuredtext
 [rst-make]:      https://github.com/liip/LiipImagineBundle/wiki/Building-RST-Documentation
 [php-unit]:      http://phpunit.de/
