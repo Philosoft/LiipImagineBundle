@@ -36,6 +36,9 @@ jobs:
           path: vendor/bin/.phpunit
           key: ${{ runner.os }}-phpunit
 
+      - name: Install PHPUnit
+        run: vendor/bin/simple-phpunit install
+
       - name: Run PHPUnit tests
         env:
           SYMFONY_DEPRECATIONS_HELPER: max[self]=0
