@@ -14,6 +14,7 @@ jobs:
         with:
           php-version: 7.4
           coverage: none
+          ini-values: disable_functions=imagewebp
 
       - name: Get composer cache directory
         id: composer-cache
